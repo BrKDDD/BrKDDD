@@ -25,7 +25,7 @@ jobs:
           card: stats
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: username=BrKDDD&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github&include_all_commits=true
+          options: username=BrKDDD&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github&include_all_commits=true&disable_animations=true
           fail_on_error: true
 
       - name: Generate top languages card
@@ -34,7 +34,7 @@ jobs:
           card: top-langs
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: username=BrKDDD&layout=compact&langs_count=8&hide_border=true&theme=github_dark
+          options: username=BrKDDD&layout=compact&langs_count=8&hide_border=true&theme=github_dark&disable_animations=true
           fail_on_error: true
 
       - name: Commit refreshed cards
